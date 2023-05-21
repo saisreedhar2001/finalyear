@@ -42,7 +42,12 @@ def main():
              emergency that requires immediate treatment to prevent it from progressing to severe sepsis or septic shock, 
              which can be fatal. Some common symptoms of sepsis include fever, chills, rapid breathing and heart rate, 
              low blood pressure, and confusion. Early recognition and treatment of sepsis are critical to improving patient 
-             outcomes.
+             outcomes. Sepsis prediction using LightGBM (Light Gradient Boosting Machine) is a machine learning approach that aims 
+	     to identify patients who are at risk of developing sepsis. LightGBM is a gradient boosting framework that is designed 
+	     to handle large-scale datasets efficiently and has become popular for various predictive modeling tasks. It's important 
+	     to note that the implementation details may vary depending on the specific application and the dataset being used. 
+	     Additionally, model performance and accuracy are critical, and medical expertise should be involved in the development
+	     and evaluation of any clinical prediction models, including sepsis prediction models.
             """)
         '''
         ## How does it work ❓ 

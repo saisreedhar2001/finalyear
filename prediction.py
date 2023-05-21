@@ -69,13 +69,13 @@ def main():
 
             loaded_model = load_model('model.pkl')
             prediction = loaded_model.predict(single_pred)
-            col1.write('''
+            col2.write('''
 		    ## Results 🔍 
 		    ''')
             if prediction.item() == 0:
-                col1.success(f"sepsis not identified")
+                col2.success(f"sepsis not identified")
             else:
-                col1.success(f"sepsis identified")
+                col2.success(f"sepsis identified")
             #col1.success(f"{prediction.item()} are recommended by the A.I for your farm.")
       #code for html ☘️ 🌾 🌳 👨‍🌾  🍃
 

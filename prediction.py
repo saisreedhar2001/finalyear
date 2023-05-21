@@ -78,6 +78,7 @@ def main():
 		    ## Results 🔍 
 		    ''')
             if prediction.item() == 0:
+		col2.success(prediction.item)
                 col2.success(f"sepsis not identified")
             else:
                 col2.success(f"sepsis identified")

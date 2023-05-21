@@ -68,12 +68,12 @@ def main():
         ICULOS = st.number_input('ICU length-of-stay (hours since ICU admit)')
 
         feature_list = [HR, o2sat, SBP, MAP, DBP, Resp, Age, HospAdmTime, ICULOS]
-        single_pred = np.array(feature_list).reshape(1,-1)
+        #single_pred = np.array(feature_list).reshape(1,-1)
         
         if st.button('Predict'):
 
             loaded_model = load_model('model.pkl')
-            prediction = loaded_model.predict(single_pred)
+            prediction = loaded_model.predict([feature_list])
             col2.write('''
 		    ## Results 🔍 
 		    ''')

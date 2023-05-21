@@ -77,11 +77,10 @@ def main():
             col2.write('''
 		    ## Results 🔍 
 		    ''')
-            if prediction.item() == 0:
-                col2.success(f"sepsis not identified")
-		col2.success(prediction.item())
-            else:
+            if prediction.item() == 1:
                 col2.success(f"sepsis identified")
+            else:
+                col2.success(f"sepsis not identified")
             #col1.success(f"{prediction.item()} are recommended by the A.I for your farm.")
       #code for html ☘️ 🌾 🌳 👨‍🌾  🍃
 
